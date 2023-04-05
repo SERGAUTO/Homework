@@ -1,7 +1,6 @@
 package uz.alpinizm.kamildemo;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.DownloadsFolder;
 import com.codeborne.selenide.Selenide;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.remote.Browser;

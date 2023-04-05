@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class ListingTests extends BaseTest {
 
     @Test
-    public void test_listing_count() {
+    public void testListingCount() {
         new HeaderComponent().navigate(HeaderItems.ALL_LISTINGS);
         var allListingsPage = new AllListingsPage();
         var allLabelCount = allListingsPage.getAllLabelCount();

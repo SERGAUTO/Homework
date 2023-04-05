@@ -14,7 +14,7 @@ public class AllListingsPage {
     }
 
     public int getCountOfListingItems() {
-        var items = $$("[href*=listing]");
+        var items = $$(".sc-jgPyTC [href*=listing]");
         items.last().scrollIntoView(true);
         var allLabelCount = getAllLabelCount();
         while ($("div~.sc-bdnxRM.jFodJP").isDisplayed() || items.size() < allLabelCount) {

@@ -26,7 +26,7 @@ public class FilterTests extends BaseTest {
     }
 
     @Test(dataProvider = "filtersProvider", dataProviderClass = FilterDataProvider.class)
-    public void test_filter_results(FilterModel filterModel) {
+    public void testFilterResults(FilterModel filterModel) {
         var configuredFilters = searchResultsFilterComponent.filterBy(filterModel)
                 .getConfiguredFilters();
         Assertions.assertThat(filterModel).usingRecursiveComparison()
@@ -36,7 +36,7 @@ public class FilterTests extends BaseTest {
     }
 
     @Test
-    public void test_filter_reset() {
+    public void testFilterReset() {
         var filterModel = FilterModel.builder().priceFrom(1000).priceTo(1300)
                 .amenities(List.of(Amenities.FREE_WIFI.getValue(), Amenities.AIR_CONDITIONING.getValue()))
                 .roomFacilities(Map.of(
